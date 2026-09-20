@@ -1,18 +1,18 @@
 package com.example.grafos;
 
 public class Arista {
-    private final Nodo origen;                 // Nodo de salida
-    private final Nodo destino;                // Nodo de llegada
+    private final Nodo origen; //nodo de partida
+    private final Nodo destino; //nodo de llegada
 
     public Arista(Nodo origen, Nodo destino) {
-        this.origen = origen;                  // Guarda origen
-        this.destino = destino;                // Guarda destino
+        this.origen = origen; // Guarda origen
+        this.destino = destino; // Guarda destino
     }
 
-    public Nodo getOrigen() { return origen; }   // Devuelve origen
-    public Nodo getDestino() { return destino; } // Devuelve destino
+    public Nodo getOrigen() { return origen; } //devuelve origen
+    public Nodo getDestino() { return destino; } //devuelve destino
 
     public double getPeso() {                  // Peso = distancia actual
-        return origen.distanciaA(destino);     // Se recalcula al mover nodos
+        return origen.distanciaA(destino); //se recalcula al mover nodos
     }
 }
